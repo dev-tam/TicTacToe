@@ -40,13 +40,13 @@ class MainActivity : AppCompatActivity() {
     fun playGame(cellID:Int, buSelected:Button){
         if (ActivePlayer == 1){
             buSelected.text="X"
-            buSelected.setBackgroundColor(Color.GREEN)
+            buSelected.setBackgroundResource(R.color.blue)
             player1.add(cellID)
             ActivePlayer=2
             autoPlay()
         }else{
             buSelected.text="O"
-            buSelected.setBackgroundColor(Color.BLUE)
+            buSelected.setBackgroundResource(R.color.darkgreen)
             player2.add(cellID)
             ActivePlayer=1
         }
