@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    protected fun onClick(view: View){
+    protected fun buClick(view: View){
         val buSelected = view as Button
         var cellID=0
         when(buSelected.id){
